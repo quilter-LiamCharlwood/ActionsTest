@@ -1,12 +1,13 @@
-# This is a basic workflow to help you get started with Actions
-
 name: CI
+
+#what triggers the action
 on:
   push:
     branches: [ "main" ]
   pull_request:
     branches: [ "main" ]
   workflow_dispatch:
+
 jobs:
   build:
     runs-on: ubuntu-latest
