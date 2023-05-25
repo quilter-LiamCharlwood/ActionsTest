@@ -1,2 +1,2 @@
 # ActionsTest
-Repo to test get actions
+Repo to test git actions
