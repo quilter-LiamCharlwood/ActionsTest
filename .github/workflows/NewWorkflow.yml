@@ -11,9 +11,7 @@ jobs:
 #job name
   First-workflow:
     runs-on: windows-latest
-    
     steps:
-
       - run: echo "The job was auctomatically triggered by a ${{github.event_name }} event."
       - run: echo "This job is now running on  a ${{ runner.os }} sevrer hoster by github." 
       - run: echo "The name of the branch this running on is ${{ github.ref )) and the repo is ${{ github.repository }}."
