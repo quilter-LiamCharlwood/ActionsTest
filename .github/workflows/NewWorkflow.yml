@@ -1,5 +1,4 @@
-name: CID
-
+name: New-Workflow
 #what triggers the action
 on:
   push:
