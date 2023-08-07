@@ -23,5 +23,5 @@ jobs:
       
       - name: Run a multi-line script
         run: |
-          ls ${{ github.workspace }},
-          echo "This job status is${{ job.status }}."
+          ls ${{ github.workspace }}.",
+          echo "This job status is ${{ job.status }}."
