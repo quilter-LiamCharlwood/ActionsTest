@@ -25,3 +25,11 @@ jobs:
         run: |
           ls ${{ github.workspace }}.",
           echo "This job status is ${{ job.status }}."
+
+  Second-Workflow:
+    runs-on: windows-latest
+    steps:
+      - run: echo "The second job was triggered by a ${{ github.event_name }} event."
+      - name: Run Test Scripts
+        run: ./.github/tests/pester/test1.ps1
+        shell: pwsh
