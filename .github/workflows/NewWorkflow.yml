@@ -24,7 +24,7 @@ jobs:
       - name: Run a multi-line script
         run: |
           ls ${{ github.workspace }}.",
-          echo "This job status is ${{ job.status }}.".
+          echo "This job status is currently at the ${{ job.status }} status."
 
   Second-Workflow:
     runs-on: windows-latest
