@@ -20,7 +20,6 @@ jobs:
       - run: echo "The ${{ github.repository }} has been cloned to the runner."
       - run: echo "The wordlow is now ready to test your code on the runner."
       - run: |
-          ls "${{ github.workspace }}.",
           echo "This job status is currently at the ${{ job.status }} status."
           
   Second-Workflow:
@@ -29,5 +28,5 @@ jobs:
       - run: echo "The second job was triggered by a ${{ github.event_name }} event."
       - name: Run Test Scripts
         shell: pwsh
-        run: ./tests/Tests1.ps1
+        run: '& $env:GITHUB_ACTION_PATH/tests/Tests1.ps1'
 
