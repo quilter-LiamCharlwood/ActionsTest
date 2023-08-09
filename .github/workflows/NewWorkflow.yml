@@ -28,5 +28,5 @@ jobs:
       - run: echo "The second job was triggered by a ${{ github.event_name }} event."
       - name: Run Test Scripts
         shell: pwsh
-        run: '& $env:GITHUB_ACTION_PATH/tests/Tests1.ps1'
+        run: ./tests/Tests1.ps1
 
