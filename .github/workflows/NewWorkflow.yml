@@ -21,11 +21,3 @@ jobs:
       - run: echo "The wordlow is now ready to test your code on the runner."
       - run: |
           echo "This job status is currently at the ${{ job.status }} status."
-          
-  Second-Workflow:
-    runs-on: windows-latest
-    steps:
-      - run: echo "The second job was triggered by a ${{ github.event_name }} event."
-      - name: Run Test Scripts
-        run: .\tests\Tests1.ps1
-
