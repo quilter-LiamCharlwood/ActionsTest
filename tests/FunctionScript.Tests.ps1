@@ -1,6 +1,7 @@
 BeforeAll {
     # Get-Emoji.Tests.ps1 - .Tests.ps1 + .ps1 = Get-Emoji.ps1
-    .\Functions\FunctionScript.ps1
+    # .\Functions\FunctionScript.ps1
+    Import-Module .\functions\FunctionScript.ps1
 }
 
 #mock .cred files taht get-qcred will return.
