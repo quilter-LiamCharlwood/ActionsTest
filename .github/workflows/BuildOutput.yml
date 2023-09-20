@@ -1,6 +1,6 @@
 on:
   workflow_run:
-    workflows: [PesterTests]
+    workflows: [Test PowerShell on Windows]
     types:
       - completed
 jobs:
